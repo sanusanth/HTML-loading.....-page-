@@ -1,0 +1,92 @@
+<html>
+<head>
+	<title> box animation </title>
+	<style>
+	body
+{
+	margin: 0;
+	padding: 0;
+}
+.center
+{
+	position: absolute;;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+span
+{
+	position: absolute;
+	width:20px;
+	height:20px;
+	background: #262626;
+	animation:animate 4s infinite ease-in-out;
+}
+span:nth-child(1)
+{
+	background: red;
+	left:-24px;
+	top:-24px;
+	transition-delay: .2s;
+}
+span:nth-child(2)
+{
+	background: blue;
+	left:-0;
+	top:-24px;
+	transition-delay: .4s;
+}
+span:nth-child(3)
+{
+	background: green;
+	left:-24px;
+	top:-0;
+	transition-delay: .8s;
+}
+span:nth-child(4)
+{
+	background: yellow;
+	left:0;
+	top:0;
+	transition-delay: .6s;
+}
+ @keyframes animate
+ {
+ 	0%
+ 	{
+ 		transform: rotate(0deg);
+ 	}
+ 	20%
+ 	{
+ 		transform: rotate(360deg);
+ 	}
+ 	40%
+ 	{
+ 		transform: rotate(180deg);
+ 	}
+ 	60%
+ 	{
+ 		transform: rotate(0deg);
+ 	}
+ 	80%
+ 	{
+ 		transform: rotate(360deg);
+ 	}
+ 	80%
+ 	{
+ 		transform: rotate(180deg);
+
+ 	}
+ }
+</style>
+</head>
+<body>
+
+	<div class="center">
+		<span> </span>
+		<span> </span>
+		<span> </span>
+		<span> </span>
+	</div>
+</h1>	</body>
+</html>
