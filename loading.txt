@@ -52,5 +52,8 @@
 			<div class="text">LODINGH</div>
 			<div class="ring"> </div>
 		</div> 
+		<br>
+		<center>
+		 <p> Creater By <b> Sanusanth </b> </p> </center>
 	</body>
 </html>
